@@ -7,37 +7,44 @@ Inspired By Solarized Dark ColorScheme
 
 
 <!doctype html>
-<title>Home</title>
+<title>New Tab</title>
 <head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
-<body>
+<body
 	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 	<script>			
 		window.onkeyup = keyup;
-		var inputTextValue;
-		function keyup(e) {
-			inputTextValue = e.target.value;
-			if (e.keyCode == 13) {
-				window.location = "http://www.google.com/search?q=" + inputTextValue;
-			}
-		}
+                var inputTextValue;
+                function keyup(e) {
+                        inputTextValue = e.target.value;
+                        if (e.keyCode == 13) {
+                                window.location = "http://www.scryfall.com/search?q=" + inputTextValue;
+                        }
+                }
 	</script>
 
-	
 	<div id="top_bar">
-		<a id="frontpage", href="https://www.youtube.com">youtube</a>
-		<a id="dota2", href="http://www.mtgsalvation.com/forums/the-game/modern/developing-competitive-modern/220258-living-end">Living End</a>
-		<a id="wiki", href="https://wikipedia.com">wikipedia</a>
-		<a id="rice", href="https://www.reddit.com/r/unixporn">r/unixporn</a>
+		<a id="frontpage", href="http://puremtgo.com">puremtgo</a>
+		<a id="archlinux", href="http://modernnexus.com">modernnexus</a>
+		<a id="dota2", href="https://www.channelfireball.com/articles/">channelfireball</a>
+		<a id="android", href="http://mainphasemtg.net">mainphasemtg</a>
+		<a id="dota2", href="http://www.mtgsalvation.com/forums/the-game/modern/developing-competitive-modern/774784-grixis-delver">grixis delver</a>
+		<a id="xda", href="http://www.mtgsalvation.com/forums/the-game/modern/developing-competitive-modern/220258-living-end">living end</a>
+		<a id="archlinux", href="http://www.mtgsalvation.com/forums/the-game/modern/deck-creation-modern/768224-esper-delver">esper delver</a>
+		<a id="wiki", href="http://www.starcitygames.com">starcitygames</a>
+		<a id="rice", href="https://www.mtggoldfish.com">mtggoldfish</a>
+		<a id="jokes", href="http://www.gatheringmagic.com">gatheringmagic</a>
 	</div>
 	
 	<div id="logo">
 		<!--Uses text and not an image to speed things up -->
-		<span style="color: #268bd2">G</span>
-		<span style="color: #dc322f">o</span>
-		<span style="color: #b58900">o</span>
-		<span style="color: #268bd2">g</span>
-		<span style="color: #859900">l</span>
-		<span style="color: #dc322f">e</span>
+		<span style="color: #645B6E">S</span>
+		<span style="color: #645B6E">c</span>
+		<span style="color: #645B6E">r</span>
+		<span style="color: #645B6E">y</span>
+		<span style="color: #645B6E">f</span>
+		<span style="color: #645B6E">a</span>
+		<span style="color: #645B6E">l</span>
+		<span style="color: #645B6E">l</span>
 	</div>
 	
 	<div>
@@ -47,7 +54,9 @@ Inspired By Solarized Dark ColorScheme
 	<div id="icons", style="font-size:48px">
 		<i id="github", class="fa fa-github", onclick="Javascript: window.location = 'https://github.com'"></i>
 		<i id="reddit", class="fa fa-reddit", onclick="Javascript: window.location = 'https://reddit.com'"></i>
+		<i id="mail", class="fa fa-envelope", onclick="Javascript: window.location = 'https://mail.google.com/mail/u/0/'"></i>
 		<i id="twitter", class="fa fa-twitter", onclick="Javascript: window.location = 'https://twitter.com'"></i>
+		<i id="soundcloud", class="fa fa-soundcloud", onclick="Javascript: window.location 'https://soundcloud.com'"></i>
 	</div>
 	
 	
@@ -162,7 +171,7 @@ Inspired By Solarized Dark ColorScheme
 	
 	#archlinux {
 		text-decoration: none;
-		border:2px solid var(--blue); 
+		border:2px solid var(--yellow); 
 		margin: 5px;
 		transition: 0.5s ease;
 	}
@@ -176,14 +185,14 @@ Inspired By Solarized Dark ColorScheme
 	
 	#rice {
 		text-decoration: none;
-		border:2px solid var(--green);	
+		border:2px solid var(--orange);	
 		margin: 5px;
 		transition: 0.5s ease;
 	}
 	
 	#xda {
 		text-decoration: none;
-		border:2px solid var(--yellow);	
+		border:2px solid var(--green);	
 		margin: 5px;
 		transition: 0.5s ease;
 	}
@@ -205,7 +214,7 @@ Inspired By Solarized Dark ColorScheme
 	#android:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: #d33682;
+		background-color: var(--violet);
 		color: var(--white);
 	} 
 	
@@ -219,7 +228,7 @@ Inspired By Solarized Dark ColorScheme
 	#archlinux:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: var(--blue);
+		background-color: var(--yellow);
 		color: var(--white);
 	}
 	
@@ -233,13 +242,13 @@ Inspired By Solarized Dark ColorScheme
 	#rice:hover {
 		transition: 0.5s ease;
 		text-decoration: none;
-		background-color: var(--green);	
+		background-color: var(--orange);	
 		color: var(--white);
 	}
 	
 	#xda:hover {
 		text-decoration: none;
-		background-color: var(--yellow);
+		background-color: var(--green);
 		color: var(--white);
 		transition: 0.5s ease;
 	}
@@ -307,7 +316,7 @@ Inspired By Solarized Dark ColorScheme
 		user-select: none;
 	}
 	
-	#github ,#reddit, #twitter{
+	#github ,#reddit, #mail, #twitter, #soundcloud{
 		background-color: var(--main-color);
 		color: var(--main-muted);
 		transition: 0.5s ease;
@@ -323,7 +332,17 @@ Inspired By Solarized Dark ColorScheme
 		transition: 0.5s ease;
 	}
 
+	#mail:hover {
+		color: var(--red);
+		transition: 0.5s ease;
+	}
+
 	#twitter:hover {
 		color: var(--cyan);
+		transition: 0.5s ease;
+	}
+
+	#soundcloud:hover {
+		color: var(--orange);
 		transition: 0.5s ease;
 	}
