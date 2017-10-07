@@ -11,12 +11,9 @@ Inspired By Solarized Dark ColorScheme
 <head><link href="https://fonts.googleapis.com/css?family=Nova+Mono" rel="stylesheet">
 <body
 	<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
-	<script>			
-		window.onkeyup = keyup;
-                var inputTextValue;
-                function keyup(e) {
-                        inputTextValue = e.target.value;
-                        if (e.keyCode == 13) {
+	<form>
+		<input type="text" name="search" placeholder="Search..">
+	</form>
                                 window.location = "http://www.scryfall.com/search?q=" + inputTextValue;
                         }
                 }
@@ -359,4 +356,18 @@ Inspired By Solarized Dark ColorScheme
 	#soundcloud:hover {
 		color: var(--orange);
 		transition: 0.5s ease;
+	}
+	input[type=text] {
+		width: 130px;
+		box-sizing: border-box;
+		border: 2px solid #ccc;
+		border-radius: 4px;
+		font-size: 16px;
+		background-color: white;
+		background-image: url('searchicon.png');
+		background-position: 10px 10px; 
+		background-repeat: no-repeat;
+		padding: 12px 20px 12px 40px;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
 	}
